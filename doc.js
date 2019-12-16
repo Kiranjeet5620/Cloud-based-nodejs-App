@@ -1,6 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
 
-// replace the uri string with your connection string.
 var uri = "mongodb+srv://kiran:2310kiran@dbcluster-tg3h6.mongodb.net/test?retryWrites=true&w=majority";
 MongoClient.connect(uri,{useUnifiedTopology: true}, function(err, client) {
    if(err) {
